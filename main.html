@@ -9,6 +9,10 @@
             font-family: Arial, sans-serif;
         }
 
+        h1 {
+            text-align: center;
+        }
+
         .book-library {
             background-color: #ffffff;
             width: 80%;
@@ -17,6 +21,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         .book {
@@ -30,22 +35,19 @@
 
         .book img {
             width: 100%;
-            height: auto;
         }
 
-        .title {
-            font-weight: bold;
+        .book h2 {
             margin: 10px 0;
         }
 
-        .author {
+        .book p {
             color: #777777;
-            margin-bottom: 10px;
         }
 
         .price {
             background-color: #2ecc71;
-            color: white;
+            color: #ffffff;
             padding: 5px;
             border-radius: 5px;
         }
@@ -53,26 +55,28 @@
 </head>
 <body>
 
+<h1>Book Library</h1>
+
 <div class="book-library">
 
     <div class="book">
         <img src="https://via.placeholder.com/150" alt="Spy in the Amber">
-        <div class="title">Spy in the Amber</div>
-        <div class="author">Unknown Author</div>
+        <h2>Spy in the Amber</h2>
+        <p>Unknown Author</p>
         <div class="price">₹299</div>
     </div>
 
     <div class="book">
         <img src="https://via.placeholder.com/150" alt="Sacred Games">
-        <div class="title">Sacred Games</div>
-        <div class="author">Vikram Chandra</div>
+        <h2>Sacred Games</h2>
+        <p>Vikram Chandra</p>
         <div class="price">₹399</div>
     </div>
 
     <div class="book">
         <img src="https://via.placeholder.com/150" alt="Byomkesh Bakshi">
-        <div class="title">Byomkesh Bakshi</div>
-        <div class="author">Sharadindu Bandyopadhyay</div>
+        <h2>Byomkesh Bakshi</h2>
+        <p>Sharadindu Bandyopadhyay</p>
         <div class="price">₹249</div>
     </div>
 
